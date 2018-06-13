@@ -197,4 +197,4 @@ class Script(object):
         print('Saving animation as ' + name)
         f = fork()
         if f == 0:
-            execlp('convert', 'convert', '-delay', '10', name_arg, name)
+            execlp('convert', 'convert', name_arg, name)
